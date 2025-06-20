@@ -1,0 +1,692 @@
+/*----------------
+CSS
+制作者：hayato
+制作日：
+サイト名：
+----------------*/
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  max-width: 1400px;
+  background-color: #1a1a1a;
+}
+
+p {
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+}
+
+span {
+  display: block;
+  color: #ffffff;
+}
+
+.wrapper {
+  margin: 0 16%;
+  margin-bottom: 150px;
+}
+
+.flex {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  margin-right: 10%;
+}
+
+.right {
+  width: 50%;
+}
+
+.con-img {
+  max-width: 350px;
+  max-height: 500px;
+}
+
+.en-title {
+  font-size: 1rem;
+  font-family: "Mate";
+  font-weight: 100;
+}
+
+.ja-title {
+  font-size: 2rem;
+  font-family: "Shippori Mincho";
+  font-weight: 100;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+.text {
+  width: 90%;
+}
+
+/** header **/
+
+header {
+  font-family: "Yuji Syuku";
+  max-width: 100%;
+  height: 242px;
+}
+
+header .flex {
+  justify-content: space-between;
+}
+
+header h1 {
+  width: 187px;
+  height: 120px;
+  margin-top: 55px;
+  margin-left: 5%;
+}
+
+header img {
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  margin-right: 12%;
+}
+
+header li {
+  margin-top: 100px;
+  margin-right: 5%;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+header li a {
+  width: 145px;
+}
+
+/** mainvisual **/
+
+#mainvisual {
+  max-width: 1400px;
+  height: calc(100vh - 242px);
+  margin-bottom: 150px;
+}
+
+#mainvisual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/** concept **/
+
+#concept .text p {
+  margin-bottom: 25px;
+}
+
+#concept .text p:last-child {
+  margin-bottom: 0;
+}
+
+/** room **/
+
+#room .text p {
+  margin-bottom: 25px;
+}
+
+#room .text br {
+  display: none;
+}
+
+#room .text p:last-child {
+  margin-bottom: 0;
+}
+
+/** baker **/
+
+#baker .text p {
+  margin-bottom: 25px;
+}
+
+#baker .text p:last-child {
+  margin-bottom: 0;
+}
+
+/** menu-1 **/
+
+#menu-1 {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+#menu-1 .menu-img {
+  height: 100vh;
+  opacity: 50%;
+}
+
+#menu-1 img {
+  height: 100%;
+}
+
+#menu-1 h2 {
+  position: absolute;
+  top: 34%;
+  left: 36%;
+  font-weight: 100;
+}
+
+#menu-1 .content-title .ja-title {
+  font-size: 2.5rem;
+  opacity: 0.9;
+}
+
+#menu-1 p {
+  position: absolute;
+  top: 60%;
+  left: 34%;
+  font-weight: 300;
+}
+
+/** menu-2 **/
+
+#menu-2 {
+  margin: 0 9%;
+  margin-bottom: 150px;
+}
+
+#menu-2 .flex {
+  justify-content: space-between;
+}
+
+#menu-2 p {
+  font-family: "Shippori Mincho";
+}
+
+#menu-2 .item-1, .item-2, .item-3 {
+  width: 25%;
+}
+
+#menu-2 .item-1 p, .item-2 p, .item-3 p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#menu-2 .more {
+  font-size: 1.25rem;
+  margin-top: 30px;
+  margin-right: 5%;
+  text-align: right;
+}
+
+#menu-2 .more a {
+  line-height: 22px;
+  border-bottom: solid 2px #ffffff;
+}
+
+/** message **/
+#message .title .name {
+  font-size: 1rem;
+  font-family: "Shippori Mincho";
+  font-weight: 100;
+}
+
+#message p {
+  margin-bottom: 25px;
+}
+
+#message p:last-child {
+  margin-bottom: 0;
+}
+
+/** info **/
+
+#info .title {
+  margin-bottom: 20px;
+  font-family: "Shippori Mincho";
+  font-size: 2rem;
+}
+
+#info .media i {
+  color: #ffffff;
+}
+
+#info .media p:last-child {
+  line-height: 1.5;
+}
+
+#info p {
+  margin-bottom: 10px;
+}
+
+#info .span {
+  font-weight: 100;
+}
+
+#info p:last-child {
+  margin-bottom: 0;
+}
+
+#info .media, .magazine, .detail {
+  margin-bottom: 30px;
+}
+
+#info a {
+  font-weight: 900;
+}
+
+/** footer **/
+
+footer p, footer li {
+  font-family: "Shippori Mincho";
+  font-size: 1.125rem;
+}
+
+footer .flex {
+  margin-bottom: 50px;
+}
+
+footer .footer-content {
+  display: flex;
+  width: 70%;
+}
+
+footer .footer-logo {
+  width: 187px;
+  height: 120px;
+  margin-left: 5%;
+}
+
+footer .footer-text {
+  margin-top: 10px;
+  margin-left: 7%;
+}
+
+footer .footer-text p {
+  line-height: 1.65;
+}
+
+footer .footer-nav {
+  margin-top: 5px;
+  margin-left: 18%;
+}
+
+footer .footer-nav li {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+footer .copy {
+  margin-bottom: 20px;
+  font-size: 0.75rem;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+/** responsive **/
+
+@media screen and (max-width: 768px) {
+
+.wrapper {
+  margin: 0 8%;
+  height: 320px;
+}
+
+.flex {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.en-title {
+  display: none;
+}
+
+.ja-title {
+  font-size: 1.5rem;
+}
+
+.left {
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+}
+
+.con-img {
+  width: 315px;
+  height: 236px;
+}
+
+.con-img img {
+  opacity: 0.6;
+}
+
+/** header **/
+
+header {
+  height: 380px;
+  margin-bottom: 40px; 
+}
+
+header h1 {
+  margin: 30px auto;
+}
+
+header .flex {
+  flex-direction: column;
+}
+
+header ul {
+  flex-direction: column;
+  margin-right: 0;
+  margin: 0 auto;
+}
+
+header li {
+  margin-top: 15px;
+  margin-right: 0;
+  font-size: 1.25rem;
+}
+
+header li:first-child {
+  margin-top: 0;
+}
+
+header li a {
+  width: 180px;
+}
+
+/** mainvisual **/
+
+#mainvisual {
+  height: 45vh;
+}
+
+/** concept **/
+
+#concept {
+  margin-bottom: 100px;
+}
+
+#concept .flex {
+  position: relative;
+}
+
+#concept .ja-title br {
+  display: none;
+}
+
+#concept .con-img {
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+#concept .text {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin:auto;
+  top: 120px;
+  z-index: 2;
+}
+
+#concept .text p {
+  background-color: rgba(48,48,48,0.5);
+}
+
+#concept .text p:last-child {
+  display: none;
+}
+
+/** room **/
+
+#room {
+  margin-bottom: 100px;
+}
+
+#room .flex {
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+#room .com-img {
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+#room .title {
+  width: 90vw;
+}
+
+#room .ja-title br {
+  display: none;
+}
+
+#room .text {
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+#room .text p {
+  background-color: rgba(48,48,48,0.5);
+}
+
+#room .text br {
+  display: block;
+}
+
+#room .text p:last-child {
+  display: none;
+}
+
+/** beker **/
+
+#baker {
+  height: 520px;
+  margin-bottom: 100px;
+}
+
+#baker .flex {
+  position: relative;
+}
+
+#baker .title {
+  text-align: center;
+}
+
+#baker .con-img {
+  height: 400px;
+  position: absolute;
+  top: 120px;
+  z-index: 1;
+}
+
+#baker .text {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+/** menu-1 **/
+
+#menu-1 {
+  height: 450px;
+}
+
+#menu-1 .menu-img {
+  width: 100%;
+  height: 50vw;
+  position: absolute;
+  top: 150px;
+  opacity: 100%;
+}
+
+#menu-1 h2 {
+  top: 0;
+  left: 80px;
+}
+
+#menu-1 .content-title .ja-title {
+  font-size: 1.5rem;
+}
+
+#menu-1 p {
+  width: 90%;
+  top: 370px;
+  left: 25px;
+}
+
+/** menu-2 **/
+
+#menu-2 {
+  height: 1700px;
+  margin-bottom: 200px;
+}
+
+#menu-2 .item-1, .item-2, .item-3 {
+  width: 100%;
+}
+
+#menu-2 .flex {
+  margin-bottom: 80px;
+}
+
+#menu-2 .more {
+  margin-top: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+/** original **/
+
+#original {
+  height: 500px;
+}
+
+#original .flex {
+  position: relative;
+}
+
+#original img {
+  opacity: 100%;
+}
+
+#original .con-img {
+  position: absolute;
+  top: 50px;
+
+}
+
+#original .ja-title br {
+  display: none;
+}
+
+#original .title {
+  position: absolute;
+  top: 0;
+  left: 4%;
+}
+
+#original .text {
+  position: absolute;
+  top: 330px;
+}
+
+/** message **/
+
+#message {
+  height: 800px;
+}
+
+#message .left {
+  height: 65%;
+}
+
+#message img {
+  height: 400px;
+  opacity: 100%;
+}
+
+#message .text p:last-child {
+  display: none;
+}
+
+/** info **/
+
+#info {
+  height: 860px;
+  margin-bottom: 70px;
+}
+
+#info .magazine, .tv {
+  display: none;
+}
+
+#info .title {
+  text-align: center;
+}
+
+/** footer **/
+
+footer .flex {
+  flex-direction: column-reverse;
+}
+
+footer .footer-logo {
+  margin: 0 auto;
+}
+
+footer .footer-text {
+  margin-top: 0;
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+footer .footer-nav {
+  margin-top: 0;
+  margin-left: 22%;
+  margin-bottom: 35px;
+}
+
+}

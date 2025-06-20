@@ -237,7 +237,7 @@ header li a {
 
 #menu-2 .more {
   font-size: 1.25rem;
-  margin-top: 30px;
+  margin-top: 65px;
   margin-right: 5%;
   text-align: right;
 }
@@ -322,7 +322,7 @@ footer .footer-logo {
 
 footer .footer-text {
   margin-top: 10px;
-  margin-left: 7%;
+  margin-left: 12%;
 }
 
 footer .footer-text p {
@@ -357,7 +357,7 @@ footer .copy {
 
 .flex {
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
